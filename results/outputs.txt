@@ -1,0 +1,76 @@
+Linear Regression Model:
+y ~ 1 + x1 + x2
+
+Estimates:
+Estimate SE tStat pValue
+___________ _________ _______ __________
+
+(Intercept) -5.2993e+05 2358 -224.74 0
+x1 121.11 20.348 5.9519 2.8798e-09
+x2 0.72284 0.0032014 225.79 0
+
+Number of Observations: 3978, Degrees of Freedom for Error: 3975
+RMS Error: 335
+R-squared: 0.929, Adjusted R-squared 0.929
+F-statistic (Constant Model): 2.58e+04, p-value = 0
+R² without sentiment: 0.92793
+Adjusted R² without sentiment: 0.92791 R² with sentiment: 0.92857 Adjusted R² with sentiment: 0.92853 AIC without sentiment: 57586.1474 BIC without sentiment: 57598.7245 AIC with sentiment: 57552.8529 BIC with sentiment: 57571.7185 1. Adding x2, FStat = 51193.1135, pValue = 0 2. Adding x1, FStat = 35.4249, pValue = 2.87978e-09 3. Adding x1:x2, FStat = 171.9919, pValue = 1.693997e-38
+
+Linear regression model:
+y ~ 1 + x1*x2
+
+Estimate coefficients:
+Estimate SE tStat pValue
+___________ _________ _______ __________
+
+(Intercept) -5.1733e+05 2501 -206.85 0
+x1 -1.0808e+05 8250.8 -13.1 2.0402e-38
+x2 0.70571 0.0033959 207.81 0
+x1:x2 0.14693 0.011204 13.115 1.694e-38
+
+Number of observations: 3978, degrees of freedom for error: 3974
+RMS Error: 328
+R-squared: 0.932, Adjusted R-squared 0.931
+F-statistic (Constant Model): 1.8e+04, p-value = 0
+1. Adding x4, FStat = 51193.1135, pValue = 0
+2. Adding x3, FStat = 69.8446, pValue = 8.7651e-17
+3. Adding x3:x4, FStat = 260.2851, pValue = 9.120533e-57
+4. Adding x2, FStat = 53.2912, pValue = 3.45602e-13
+5. Adding x2:x3, FStat = 14.6518, pValue = 0.000131302
+6. Adding x2:x4, FStat = 13.2371, pValue = 0.000277949
+7. Adding x1, FStat = 15.6119, pValue = 7.91171e-05
+8. Adding x1:x3, FStat = 49.8229, pValue = 1.97707e-12
+9. Adding x1:x4, FStat = 9.6137, pValue = 0.0019449
+10. Removing x2:x4, FStat = 0.71457, pValue = 0.39798
+
+Linear regression model:
+y ~ 1 + x1*x3 + x1*x4 + x2*x3 + x3*x4
+
+Estimated coefficients:
+Estimate SE tStat pValue
+___________ ________ _______ __________
+
+(Intercept) -5.374e+05 3082.7 -174.33 0
+x1 57767 16793 3.4399 0.00058797
+x2 443.81 132.17 3.358 0.0007926
+x3 -5.7091e+05 43581 -13.1 2.0419e-38
+x4 0.73303 0.004183 175.24 0
+x1:x3 -2214.3 265.56 -8.338 1.0295e-16
+x1:x4 -0.07894 0.022802 -3.4619 0.00054194
+x2:x3 -4940.9 657.18 -7.5183 6.8195e-14
+x3:x4 0.77967 0.059251 13.159 9.7047e-39
+
+Number of observations: 3978, degrees of freedom for error: 3969
+RMS error: 317
+R-squared: 0.936, adjusted R-squared 0.936
+F statistic (constant model): 7.26e+03, p-value = 0
+Average CV MSE with sentiment: 112454.7296
+Average CV MSE without sentiment: 113334.9095
+Sentiment Score Importance (Coefficient): 121.1092
+Time Importance (Coefficient): 0.72284
+
+detrend
+Reject the null hypothesis, there is a cointegration relationship.
+p-value: 0.0038435
+Test statistic: -4.2423
+Critical value: -3.3405
